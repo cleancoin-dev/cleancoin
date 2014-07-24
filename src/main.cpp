@@ -982,13 +982,9 @@ int64_t GetProofOfWorkReward(int64_t nFees)
      {
          nSubsidy = 150 * COIN;
      }
-         else if(pindexBest->nHeight <= 4000)
+         else if(pindexBest->nHeight <= 5000)
      {
          nSubsidy = 100 * COIN;
-     }
-         else if(pindexBest->nHeight <= 10000)
-     {
-         nSubsidy = 75 * COIN;
      }
 
     if (fDebug && GetBoolArg("-printcreation"))
